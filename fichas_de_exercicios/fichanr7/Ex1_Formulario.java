@@ -58,10 +58,7 @@ public class Ex1_Formulario extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnEntrar) {
-            if (tfdUsuario.getText().equals(tfdSenha.getText()))
-                JOptionPane.showMessageDialog(null, "Sucesso");
-            else
-                JOptionPane.showMessageDialog(null, "Falha");
+            JOptionPane.showMessageDialog(null, tfdUsuario.getText().equals(tfdSenha.getText()) ? "Sucesso" : "Falha");
         }
 
             if (e.getSource() == btnCancelar){
