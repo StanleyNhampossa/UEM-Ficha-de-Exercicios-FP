@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Ex1_Formulario extends JFrame implements ActionListener {
+public class Ex1_1_Login extends JFrame implements ActionListener {
 
     private final JLabel lblUsuario = new JLabel("Usuário:");
     private final JLabel lblSenha = new JLabel("Senha:");
@@ -15,7 +15,7 @@ public class Ex1_Formulario extends JFrame implements ActionListener {
     private final JPanel panel = new JPanel(null);
 
 
-    public Ex1_Formulario(){
+    public Ex1_1_Login(){
         setSize(500, 220);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
@@ -52,7 +52,7 @@ public class Ex1_Formulario extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) {
-        new Ex1_Formulario().Tela();
+        new Ex1_1_Login().Tela();
     }
 
     @Override
