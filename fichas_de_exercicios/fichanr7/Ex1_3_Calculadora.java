@@ -7,39 +7,31 @@ import java.awt.event.ActionListener;
 
 public class Ex1_3_Calculadora extends JFrame implements ActionListener {
 
-    JButton btn1 = new JButton("1");
-    JButton btn2 = new JButton("2");
-    JButton btn3 = new JButton("3");
-    JButton btn4 = new JButton("4");
-    JButton btn5 = new JButton("5");
-    JButton btn6 = new JButton("6");
-    JButton btn7 = new JButton("7");
-    JButton btn8 = new JButton("8");
-    JButton btn9 = new JButton("9");
-    JButton btn0 = new JButton("0");
-
-    JButton btnMais = new JButton("+");
-    JButton btnMenos = new JButton("-");
-    JButton btnVezes = new JButton("x");
-    JButton btnDividir = new JButton("/");
-    JButton btnIgual = new JButton("=");
-
-    JButton btnVirgula = new JButton(",");
-    JButton btnMaisOuMenos = new JButton("+/-");
-
-    JButton btnApagar = new JButton("Apagar");
-
-    JLabel lblOperacaoEscrita = new JLabel();
-    JLabel lblOperacaosendoEscrita = new JLabel();
-
-    Color colorBlue = new Color(120, 158, 239);
-    Color colorGray = new Color(187, 183, 183);
-
-    double resultado;
-
+    private final JButton btn1 = new JButton("1");
+    private final JButton btn2 = new JButton("2");
+    private final JButton btn3 = new JButton("3");
+    private final JButton btn4 = new JButton("4");
+    private final JButton btn5 = new JButton("5");
+    private final JButton btn6 = new JButton("6");
+    private final JButton btn7 = new JButton("7");
+    private final JButton btn8 = new JButton("8");
+    private final JButton btn9 = new JButton("9");
+    private final JButton btn0 = new JButton("0");
+    private final JButton btnMais = new JButton("+");
+    private final JButton btnMenos = new JButton("-");
+    private final JButton btnVezes = new JButton("x");
+    private final JButton btnDividir = new JButton("/");
+    private final JButton btnIgual = new JButton("=");
+    private final JButton btnVirgula = new JButton(",");
+    private final JButton btnMaisOuMenos = new JButton("+/-");
+    private final JButton btnApagar = new JButton("Apagar");
+    private final JLabel lblOperacaoEscrita = new JLabel();
+    private final JLabel lblOperacaosendoEscrita = new JLabel();
+    private final Color colorBlue = new Color(120, 158, 239);
+    private final Color colorGray = new Color(187, 183, 183);
+    private double resultado;
     JPanel panel = new JPanel(null);
     JPanel panel1 = new JPanel(null);
-    JPanel panel2 = new JPanel(null);
     JPanel panel3 = new JPanel(null);
 
     public Ex1_3_Calculadora(){
@@ -48,7 +40,7 @@ public class Ex1_3_Calculadora extends JFrame implements ActionListener {
         setResizable(false);
         setTitle("Calculadora");
         setLocationRelativeTo(null);
-        setSize(340, 540);
+        setSize(340, 486);
     }
 
     public void tela(){
@@ -122,13 +114,9 @@ public class Ex1_3_Calculadora extends JFrame implements ActionListener {
 
 
 
+        panel1.setBounds(0, 116, 340, 370);
 
 
-
-        panel1.setBounds(0, 170, 340, 370);
-
-        panel2.setBackground(Color.BLACK);
-        panel2.setBounds(0, 116, 340, 52);
 
 
         lblOperacaoEscrita.setBounds(0, 0, 340, 30);
@@ -141,7 +129,6 @@ public class Ex1_3_Calculadora extends JFrame implements ActionListener {
 
 
         panel.add(panel1);
-        panel.add(panel2);
         panel.add(panel3);
 
 
